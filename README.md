@@ -1,6 +1,6 @@
 # md-index
 
-A Python cli tool to generate Table of contents from markdown directories
+A Python cli tool to generate a table of contents file from markdown directories
 
 _Compatible with gitbook_
 
