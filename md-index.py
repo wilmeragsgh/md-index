@@ -38,5 +38,10 @@ tst_out = "\n".join(list(map(lambda x: parse_toc(0, x), list(paths_dict))))
 
 while "\n\n" in tst_out:
     tst_out = tst_out.replace("\n\n","\n")
-print(tst_out.replace("\n* [","\n\n* ["))
+
+tst_out = tst_out.replace("\n* [", "\n\n* [")
+tst_out = f"# Table of contents\n\n{tst_out}"
+
+with open("SUMMARY_.md", "w") as f:
+    f.write(tst_out)
 
