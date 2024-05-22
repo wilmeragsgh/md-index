@@ -1,7 +1,16 @@
 # md-index
 
-A Python cli tool to generate a table of contents file from markdown directories
+A simple Python cli tool to generate a table of contents file from markdown directories
 
-_Compatible with gitbook_
+## Setup
 
-> I plan to organize this repo as soon as I have time, but I needed it working first. You can put the file in the root of the project you want to create the toc for and run it in the meantime.
+```sh
+conda create -n md_venv python=3.10 --file requirements.txt
+conda activate md_venv
+```
+
+## Usage
+
+```sh
+python md-index.py generate --directory="./" --target_file="SUMMARY_.md"
+```
